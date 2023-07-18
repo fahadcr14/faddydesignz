@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    {% load static %}
+
+    <link href="{% static 'css/output.css' %}" rel="stylesheet" />    
+    <style>
+        body {
+            font-family:Poppins;
+        }
+        
+        .bg-indigo-700{
+            border-radius:10px;
+            padding:12px;
+            top:-8px;
+            position:relative;
+
+        }
+        
+        
+        .hidden md:block{
+            display:none;
+        }
+        .font-medium{
+            font-family:Poppins;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500" style="">
+  <!-- Navbar -->
+  <section>
+  <nav class="p-4 text-2xl rounded-full shadow-xl" >
+      <!-- Your content here -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+              <div class="flex items-center">
+                  <a href="#" class="text-white font-extrabold ">Portfolio</a>
+              </div>
+                  <div class="hidden md:block">
+                      <div class="ml-10 flex items-baseline space-x-4 text-lg">
+                        <a href="/" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Home</a>
+                        <a href="aboutus.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">About</a>
+                        <a href="service.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Services</a>
+                        <a href="contact.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Contact</a>
+                    </div>
+              </div>
+              <div class="-mr-2 flex md:hidden">
+                  <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden" id="hidden md:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 w-full text-center ">
+            <a href="/" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="aboutus.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="service.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+            <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <br><br>
+          </div>
+      </div>
+  </nav>
+  
+    
+    
+    <!-- Your content here -->
+    <div class="flex items-center justify-center" style="top: 100px; position: relative">
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+          <div class="md:mt-10" style="margin-left:30px">
+            <h1 class="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+              You Imagine We Build.<br>Start Your Journey Now.
+            </h1>
+            
+            <br>
+            <p class="text-lg md:text-2xl font-regular text-green-200 text-left">Turn Your Dreams Into Reality With Us.</p>
+            <div class="text-green-200 h-16 md:h-20 w-44 md:w-60 rounded-full shadow-xl">
+              <br>  
+              <h1 class="text-center text-lg md:text-3xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                Get Started->
+              </h1>
+            </div>
+          </div>
+          
+          <img src="{% static 'img/home.png' %}" alt="seo expert" class="rounded-full shadow-lg">
+          
+          <div class="flex justify-end md:hidden">
+            <div class="bg-blue-500 h-20 transform rotate-45"></div>
+          </div>
+        </div>
+        
+      </div>
+      <br>
+      <div class="shadow-lg rounded-2xl">
+        <h1 class="text-center text-3xl md:text-5xl font-semibold text-green-200  bg-clip-text">
+            -Our Services-
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" style="text-align:center;margin-right:25px">
+            <div class=" md:mt-10 shadow-lg rounded-2xl" style="margin-left:30px">
+                <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                        Seo Optimization
+                        </h1>
+
+                        
+                    <p class="mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                            Unleash the Power of SEO Optimization. Get Traffic From Worldwide.
+                            <br>
+                            <button class=" px-4 py-2 bg-indigo-500 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                                Learn More
+                            </button>
+                        </p>
+                        
+                        
+                
+                </div>
+                
+                <div class=" md:mt-10 shadow-lg rounded-2xl" style="margin-left:30px">
+                    <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    Web Developnment
+                    </h1>
+                    <br>
+                    <p class="mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                        Get Your Imagination into a Reality With our Full Stack Website Developnment Service.
+                        <br>
+                        <button class=" px-4 py-2 bg-indigo-500 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                            Learn More
+                            </button>
+                    </p>
+                
+                </div>
+                <div class="md:mt-10 shadow-lg rounded-2xl" style="margin-left:30px">
+                    <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    Automation and Scraping
+                    </h1>
+                    
+                    <br>
+                    <p class="mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                        Automate Your Imagination into the Reality.
+                        <br>
+                        <button class=" px-4 py-2 bg-indigo-500 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                            Learn More
+                        </button>
+                    </p>
+                
+                </div>
+            </div>
+        </div>
+        <br>
+        <h1 class="text-center text-3xl md:text-5xl font-semibold text-pink-400 text-transparent bg-clip-text">
+            -Why To Hire Us?-
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-transparent shadow-20 " style="text-align:center;padding:20px">
+            <div class="md:mt-10 shadow-lg rounded-5xl">
+                <button class="px-4 py-2 bg-pink-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    24/7 Support
+                </h1>
+                </button>
+                <p class="mt-8 h-28 md:h-24 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                Our Talented Team Makes Sure to Respond to Any Query Immediately.
+                </p>
+            </div>
+            <div class="md:mt-10 shadow-lg rounded-5xl">
+                <button class="px-4 py-2 bg-pink-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    Quality Work
+                </h1>
+                </button>
+                <p class="mt-8 h-24 md:h-24 w-25 md:w-200 rounded-lg shadow-lg text-lg md:text-xl font-regular text-green-200 text-center border-2 border-green-200 p-4">
+                We Believe in Quality over Quantity.
+                </p>
+            </div>
+            <div class="md:mt-10 shadow-lg rounded-5xl">
+                <button class="px-4 py-2 bg-pink-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    Satisfaction
+                </h1>
+                </button>
+                <p class="mt-8 h-24 md:h-24 w-25 md:w-200 rounded-lg shadow-lg text-lg md:text-xl font-regular text-green-200 text-center border-2 border-green-200 p-4">
+                Our No. 1 Priority is to Satisfy the Client's Needs.
+                </p>
+            </div>
+            </div>
+
+            <br>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-transparent shadow 20" style="text-align:center;padding:20px">
+        <div class="md:mt-10 shadow-lg rounded-5xl" >
+            <h1 class="text-center text-2xl md:text-4xl font-semibold text-green-200  bg-clip-text">
+                -Time Spent-
+              </h1>
+              <br>
+                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                    <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text ">
+                        10180+ Hours
+                    </h1>
+                </button>
+                <br><br>
+        </div>
+        <div class="md:mt-10 shadow-lg rounded-lg hover:bg-indigo-300 hover:text-white" >
+            <h1 class="text-center text-2xl md:text-4xl font-semibold text-green-200  bg-clip-text">
+                -Projects Done-
+              </h1>
+              <br>
+                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                    <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text ">
+                        100+
+                    </h1>
+                </button>
+        </div>
+        
+        <div class="md:mt-10 shadow-lg rounded-5xl" >
+            <h1 class="text-center text-2xl md:text-4xl font-semibold text-green-200  bg-clip-text">
+                -Deployed-
+              </h1>
+              <br>
+                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                    <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text ">
+                        90+
+                    </h1>
+                </button>
+        </div>
+    </section>
+        <!---Testimonials   -->
+        <section class="text-neutral-700 dark:text-neutral-300 p-8" style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);border-radius:110px;">
+            <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
+              <h3 class="mb-6 text-3xl font-bold">What Our Clients Say</h3>
+              <p class="mb-6 pb-2 md:mb-12 md:pb-0 ">
+                we are happy to work with such great clients . See what they say about our work.
+              </p>
+            </div>
+          
+            <!--First Testimonial-->
+            <div class="grid gap-6 text-center md:flex justify-center ">
+              <div>
+                <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700"  >
+                    <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
+                  <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
+                  </div>
+                  <div class="p-6">
+                    <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>
+                    <hr />
+                    <p class="mt-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
+                        <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                      </svg>
+                      Neque cupiditate assumenda in maiores repudi mollitia
+                      architecto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+          
+              <!--Second Testimonial-->
+              <div>
+                <div class=" rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+                  <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
+                  <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
+                  </div>
+                  <div class="p-6">
+                    <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>
+                    <hr />
+                    <p class="mt-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
+                        <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                      </svg>
+                      Neque cupiditate assumenda in maiores repudi mollitia
+                      architecto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+              <!--Third Testimonial-->
+              <div>
+                <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+                  <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
+                  <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" />
+                  </div>
+                  <div class="p-6">
+                    <h4 class="mb-4 text-2xl font-semibold">John Smith</h4>
+                    <hr />
+                    <p class="mt-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
+                        <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                      </svg>
+                      Delectus impedit saepe officiis ab aliquam repellat rem unde
+                      ducimus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br>
+          </section>
+          <section>
+            <div class="shadow-lg rounded-2xl p-8 ">
+              <h1 class="text-center text-3xl md:text-5xl font-semibold text-green-200  bg-clip-text">
+                  -Tech Stacks We Work-in-
+              </h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-transparent p-8 rounded-full shadow-2xl "  style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);border-radius:110px;margin:20px">
+              <div class="mt-8 shadow-2xl mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-indigo-500 dark:border-neutral-800 dark:bg-neutral-800"
+                  data-te-collapse-init
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#pythonintro"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pythonintro">
+                <img src="{% static 'img/pythonicon.png' %}"/>
+              </div>
+              <div class="!visible hidden" id="pythonintro" data-te-collapse-item>
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+                    Our expertise in Python and their frameworks.
+                </div>sel
+            </div>
+            <div class="mt-8 shadow-2xl mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-indigo-500 dark:border-neutral-800 dark:bg-neutral-800"
+            data-te-collapse-init
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#jsintro"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="jsintro">
+                <img src="{% static 'img/js.png' %}"/>
+              </div>
+              <div class="!visible hidden" id="jsintro" data-te-collapse-item>
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+                    Our Team has strong grip on javascript which is neccesary part of making an webiste/
+                </div>
+            </div>
+            <div class="shadow-2xl mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-indigo-500 dark:border-neutral-800 dark:bg-neutral-800"
+            data-te-collapse-init
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#seleniumintro"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="seleniumintro">
+                <img src="{% static 'img/selenium.png' %}"/>
+              </div>
+              <div class="!visible hidden" id="seleniumintro" data-te-collapse-item>
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+                    We Can Automate any task using selenium and scrape any data from world-wide sites.
+                </div>
+            </div>
+            <div class="shadow-2xl mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-indigo-500 dark:border-neutral-800 dark:bg-neutral-800"
+            data-te-collapse-init
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#djangointro"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="djangointro">
+                <img src="{% static 'img/django.png' %}"/>
+              </div>
+              <div class="!visible hidden" id="djangointro" data-te-collapse-item>
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+                    Hire the best talented back-end team of django experts.
+                </div>
+            </div>
+            <div class="shadow-2xl mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-indigo-500 dark:border-neutral-800 dark:bg-neutral-800"
+                  data-te-collapse-init
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#nodejsintro"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="nodejsintro">
+                <img src="{% static 'img/node.png' %}"/>
+              </div>
+              <div class="!visible hidden" id="nodejsintro" data-te-collapse-item>
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+                    Hire the best talented node.js experts.
+                </div>
+            </div>
+            <div class="shadow-2xl mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-indigo-500 dark:border-neutral-800 dark:bg-neutral-800"
+
+                data-te-collapse-init
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  href="#reactjsintro"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="reactjsintro">
+                <img src="{% static 'img/react.png' %}"/>
+              </div>
+              <div class="!visible hidden" id="reactjsintro" data-te-collapse-item>
+                <div class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50">
+                    Make the fastest website with our React.js front-end devs. 
+                </div>
+            </div>
+              
+            </div>
+          </section>
+          <br><br>
+          
+
+          
+    <div class="container my-24 mx-auto md:px-6 " >
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-center " style="padding:20px;">
+          <h2 class="mb-12 text-3xl font-bold">Our Talented Members</h2>
+          <br>
+      
+          <div class="grid gap-4 md:grid-cols-3 xl:gap-x-12 ">
+            <div class="mb-6 lg:mb-0">
+              <div
+                class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg" class="w-full rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute left-0 bottom-0 text-white dark:text-neutral-700" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 320">
+                    <path fill="currentColor"
+                      d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-2 text-lg font-bold">Halley Frank</h5>
+                  <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+                    Marketing Specialist
+                  </h6>
+                  <ul class="mb-6 flex justify-center">
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium accusamus voluptatum deleniti atque
+                    corrupti.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="mb-6 lg:mb-0">
+              <div
+                class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg" class="w-full rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute left-0 bottom-0 text-white dark:text-neutral-700" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 320">
+                    <path fill="currentColor"
+                      d="M0,96L48,128C96,160,192,224,288,240C384,256,480,224,576,213.3C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-2 text-lg font-bold">John Doe</h5>
+                  <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+                    Web Developer
+                  </h6>
+                  <ul class="mb-6 flex justify-center">
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p>
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                    placerat vulputate. Ut vulputate est non quam dignissim
+                    elementum. Donec a ullamcorper diam.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="">
+              <div
+                class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/15.jpg" class="w-full rounded-t-lg" />
+                  <a href="#!">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
+                  </a>
+                  <svg class="absolute left-0 bottom-0 text-white dark:text-neutral-700" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 320">
+                    <path fill="currentColor"
+                      d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-2 text-lg font-bold">Lisa Trey</h5>
+                  <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
+                    Public Relations
+                  </h6>
+                  <ul class="mb-6 flex justify-center">
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                        <path fill="currentColor"
+                          d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p>
+                    Enim ad minima veniam, quis nostrum exercitationem ullam
+                    corporis suscipit laboriosam, nisi ut aliquid commodi quis
+                    nostrum minima.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Design Block -->
+      </div>
+      <!--CTA Button-->
+      <br><br>
+      <div class="container my-24 mx-auto md:px-6 p-8">
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-center">
+          <h2 class="mb-12 pb-4 text-center text-3xl font-bold">
+            Projects we are proud of
+          </h2>
+      
+          <div class="mt-4 grid gap-6 md:grid-cols-3 xl:gap-x-12" >
+            <div class="mb-6 lg:mb-0 " >
+              <div class="shadow-lg relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(255, 255, 255, 0.8),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700" style="background: rgb(255,216,0);background: linear-gradient(90deg, rgba(255,216,0,1) 0%, rgba(244,8,197,1) 100%, rgba(0,212,255,1) 100%);">
+                <div class="flex">
+                  <div class="shadow-lg relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/002.webp" class="w-full" />
+                    <a href="#!">
+                      <div
+                        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-4 text-lg font-bold">White city</h5>
+                  <p class="mb-6">
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                    placerat vulputate. Ut vulputate est non quam dignissim
+                    elementum. Donec a ullamcorper diam.
+                  </p>
+                  <a href="#!" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block rounded-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
+                    more</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="mb-6 lg:mb-0">
+                <div class=" shadow-lg relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(255, 255, 255, 0.8),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700" style="background: rgb(255,216,0);background: linear-gradient(90deg, rgba(255,216,0,1) 0%, rgba(244,8,197,1) 100%, rgba(0,212,255,1) 100%);">
+                    <div class="flex">
+                  <div class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/066.webp" class="w-full" />
+                    <a href="#!">
+                      <div
+                        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-4 text-lg font-bold">A lonely bench</h5>
+                  <p class="mb-6">
+                    Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
+                    diam orci, nec ornare metus semper sed. Integer volutpat
+                    ornare erat sit amet rutrum.
+                  </p>
+                  <a href="#!" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block rounded-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
+                    more</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="mb-0">
+                <div class="shadow-lg relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(255, 255, 255, 0.8),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700" style="background: rgb(255,216,0);background: linear-gradient(90deg, rgba(255,216,0,1) 0%, rgba(244,8,197,1) 100%, rgba(0,212,255,1) 100%);">
+                    <div class="flex">
+                  <div class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/191.webp" class="w-full" />
+                    <a href="#!">
+                      <div
+                        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h5 class="mb-4 text-lg font-bold">E commerce Stores</h5>
+                  <p class="mb-6">
+                    Curabitur tristique, mi a mollis sagittis, metus felis mattis
+                    arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
+                    massa volutpat feugiat. Donec.
+                  </p>
+                  <a href="#!" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block rounded-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
+                    more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Design Block -->
+      </div>
+                    <!--Footer-->
+          <!-- Footer section with social media icons and newsletter sign-up -->
+          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8" >
+            <div class="container px-6 pt-6" >
+              <!-- Social media icons container -->
+              <div class="mb-6 flex justify-center shadow-lg " >
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+    
+              <!-- Newsletter sign-up form -->
+              <div class="shadow-lg ">
+                <form action="">
+                  <div
+                    class="grid-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+                    <div class="md:mb-6 md:ml-auto">
+                      <p class="">
+                        <strong>Sign up for our newsletter</strong>
+                      </p>
+                    </div>
+    
+                    <!-- Newsletter sign-up input field -->
+                    <div class=" relative flex items-center  md:mb-0" data-te-input-wrapper-init>
+                      <input
+                        type="text"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlInput1"
+                        placeholder="Email address" />
+                      <label
+                        for="exampleFormControlInput1"
+                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+                        >Email address
+                      </label>
+                    </div>
+                    
+    
+                    <!-- Newsletter sign-up submit button -->
+                    <div class="mb-6 md:mr-auto">
+                      <button
+                        type="submit"
+                        class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                        data-te-ripple-init
+                        data-te-ripple-color="light">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+    
+              <!-- Copyright information -->
+              
+    
+              <!-- Links section -->
+              <div class="grid md:grid-cols-2 lg:grid-cols-4" style="">
+                <div class="mb-6">
+                  <h5 class="mb-2.5 font-bold uppercase">Company</h5>
+    
+                  <ul class="mb-0 list-none">
+                    <li>
+                      <a href="#!" class="text-white">Home</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Services</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Contac Us</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="mb-6">
+                  <h5 class="mb-2.5 font-bold uppercase">Details</h5>
+    
+                  <ul class="mb-0 list-none">
+                    <li>
+                      <a href="#!" class="text-white">support@faddydesignz.com</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Whatsapp +92 3254585673</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Facebook</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+                
+              <div
+                  class="grid md:grid-rows-1 lg:grid-row-1  text-center rounded-2xl "
+                  style="">
+                  © 2023 Copyright:
+                  <a class="text-white" href="https://tailwind-elements.com/"
+                    >Faddy Designz</a
+                    style="border-radius:200px">
+                
+                </div>
+            <!-- Copyright section -->
+          </footer>
+        <script
+      src="{% static 'tw-elements/dist/js/tw-elements.umd.min.js' %}"
+      type="text/javascript"></script>
+    <script>
+        // JavaScript for handling mobile menu toggle
+        const btn = document.querySelector('.md\\:hidden > button');
+        const menu = document.querySelector('.md\\:hidden ~ .hidden');
+        const navbar = document.getElementById('hidden md:hidden');
+    
+        btn.addEventListener('click', function() {
+            if (navbar.style.display == "block") {
+                btn.innerHTML = `<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                1</svg>`;
+                navbar.style.display = "none";
+                
+            } else {
+                btn.innerHTML = `<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>`;
+                navbar.style.display = "block";
+                
+                
+            }
+        });
+        // Initialization for ES Users
+        
+        
+    </script>
+    
+</body>
+    
+</html>
