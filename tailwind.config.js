@@ -5,7 +5,10 @@ module.exports = {
     "./static/js/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Poppins'],
+      },}
   },
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin.cjs")],
