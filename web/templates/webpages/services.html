@@ -600,13 +600,3 @@
 </body>
     
 </html>
-[program:gunicorn]
-directory=/home/ubuntu/portfolio
-command=/home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/portfolio/app.sock web.wsgi:application
-autostart=true
-autorestart=true
-stderr_logfile=/var/log/gunicorn/gunicorn.err.log
-stdout_logfile=/var/log/gunicorn/gunicorn.out.log
-
-[group:guni]
-programs:gunicorn

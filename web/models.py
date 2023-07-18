@@ -7,4 +7,4 @@ class Contact(models.Model):
     service = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.CharField(max_length=500,default='')
-    phone = PhoneNumberField(blank=True)
+    phone = models.CharField(max_length=100,blank=True)
