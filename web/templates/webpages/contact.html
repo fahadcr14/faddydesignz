@@ -31,59 +31,74 @@
 <body class="bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 font-sans" style="">
   <!-- Navbar -->
   <section>
-  <nav class="p-4 text-2xl rounded-full shadow-xl" >
-      <!-- Your content here -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-              <div class="flex items-center">
-                  <a href="#" class="text-white font-extrabold ">Portfolio</a>
-              </div>
-                  <div class="hidden md:block">
-                      <div class="ml-10 flex items-baseline space-x-4 text-lg">
-                        <a href="/" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Home</a>
-                        <a href="aboutus.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">About</a>
-                        <a href="service.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Services</a>
-                        <a href="contact.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Contact</a>
-                    </div>
-              </div>
-              <div class="-mr-2 flex md:hidden">
-                  <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
-                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                      </svg>
-                  </button>
-              </div>
-          </div>
-      </div>
-
-      <!-- Mobile menu -->
-      <div class="hidden md:hidden" id="hidden md:hidden">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 w-full text-center ">
-            <a href="/" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-            <a href="aboutus.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-            <a href="service.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-            <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            <br><br>
-          </div>
-      </div>
-  </nav>
+    <nav class="p-4 text-2xl rounded-full shadow-xl" data-te-animation-init
+    data-te-animation-start="onClick"
+    data-te-animation-on-scroll="repeat"
+    data-te-animation-reset="true"
+    data-te-animation="[fade-in _1s_ease-in-out]">
+        <!-- Your content here -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
+            <div class="flex items-center justify-between h-16"
+            >
+                <div class="flex items-center">
+                    <a href="/" class="text-white font-extrabold ">FaddyDesignz</a>
+                </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4 text-lg">
+                          <a href="/" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Home</a>
+                          <a href="aboutus.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">About</a>
+                          <a href="service.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Services</a>
+                          <a href="contact.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Contact</a>
+                      </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 w-full text-center ">
+              <a href="/" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+              <a href="aboutus.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+              <a href="service.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+              <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+              <br><br>
+            </div>
+          
+        </div > 
+    </nav>
   
     
     
     <!-- Your content here -->
-    <form id="contactForm" class="p-4"  method="post">
+    <form id="contactForm" class="p-4"  method="post" >
       {% csrf_token %}
-    <div class="max-w-md mx-auto  shadow-lg rounded-lg overflow-hidden p-8  rounded-full">
-        <div class="justify-center bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text px-6 py-4">
+    <div class="max-w-md mx-auto  shadow-lg rounded-lg overflow-hidden p-8  rounded-full " style="box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);"> 
+        <div class="justify-center bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text px-6 py-4" >
           <h2 class="text-2xl font-bold text-white text-center">Contact Form</h2>
           
         </div>
-        <div id='sucess-pop' class="mt-8 text-center hidden">
-            <svg class="mx-auto text-white fill-current w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <h3 class="mt-4 text-lg font-light text-indigo-800">We Have Got Your Message.We will contact You shortly.</h3>
-            <p class="text-base text-gray-400 font-light"></p>
+        
+        <div role="status" id="spinner" class="flex justify-center hidden">
+          
+          <svg aria-hidden="true" class="w-20 h-20 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+              <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+          </svg>
+        </div>
+
+        <div id='sucess-pop' class="mt-8 text-center hidden ">
+          <svg class="mx-auto text-white fill-current w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="black">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+            <h3 class="mt-4 text-lg font-light text-green-200">We Have Got Your Message.We will contact You shortly.</h3>
+            <p class="text-base text-white font-light" id="redirecting"></p>
           </div>
           
         <div class="p-6" id ="contact-container">
@@ -108,7 +123,7 @@
             <!-- Step 1 - Name -->
             <div id="step1" class="">
               <h3 class="mt-4 text-center text-lg font-semibold text-white">Step 1</h3>
-                <div class="mt-4 md:w-1/2">
+                <div class="mt-4 md:w-full">
                     <label for="name" class="block text-white font-semibold mb-2">Name</label>
                     <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your name" required>
                   </div>
@@ -158,10 +173,14 @@
         </div>
       </div>
     </form>
-        <br><br> <br><br> <br><br> <br><br>
                  <!--Footer-->
           <!-- Footer section with social media icons and newsletter sign-up -->
-          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8" >
+          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8"
+          data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-up_1s_ease-in-out]"style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);" >
             <div class="container px-6 pt-6" >
               <!-- Social media icons container -->
               <div class="mb-6 flex justify-center shadow-lg " >
@@ -276,18 +295,21 @@
                     </div>
     
                     <!-- Newsletter sign-up input field -->
-                    <div class="relative md:mb-6" data-te-input-wrapper-init>
+                    <div class="relative flex items-center md:mb-0 border-2 border-white p-2 md:p-4" >
                       <input
                         type="text"
                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                         id="exampleFormControlInput1"
-                        placeholder="Email address" />
+                        placeholder="Email address"
+                      />
                       <label
                         for="exampleFormControlInput1"
                         class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
                         >Email address
                       </label>
                     </div>
+                    
+                    
     
                     <!-- Newsletter sign-up submit button -->
                     <div class="mb-6 md:mr-auto">
@@ -313,16 +335,16 @@
     
                   <ul class="mb-0 list-none">
                     <li>
-                      <a href="#!" class="text-white">Home</a>
+                      <a href="/" class="text-white">Home</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Services</a>
+                      <a href="service.html" class="text-white">Services</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Contac Us</a>
+                      <a href="contact.html" class="text-white">Contac Us</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">About Us</a>
+                      <a href="aboutus.html" class="text-white">About Us</a>
                     </li>
                   </ul>
                 </div>
@@ -332,10 +354,10 @@
     
                   <ul class="mb-0 list-none">
                     <li>
-                      <a href="#!" class="text-white">support@faddydesignz.com</a>
+                      <a href="mailto:support@faddydesignz.com" class="text-white">support@faddydesignz.com</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Whatsapp +92 3254585673</a>
+                      <a href="https://wa.me/923254585673" class="text-white">Whatsapp +92 3254585673</a>
                     </li>
                     <li>
                       <a href="#!" class="text-white">Facebook</a>
@@ -352,7 +374,7 @@
                   class="grid md:grid-rows-1 lg:grid-row-1  text-center rounded-2xl "
                   style="">
                   © 2023 Copyright:
-                  <a class="text-white" href="https://tailwind-elements.com/"
+                  <a class="text-white" 
                     >Faddy Designz</a
                     style="border-radius:200px">
                 
@@ -442,19 +464,23 @@
           });
           
           document.getElementById('contactForm').addEventListener('submit', function(event) {
+            document.getElementById('contact-container').style.display = 'none';
+
+            document.getElementById('spinner').classList.remove('hidden');
+
             event.preventDefault(); // Prevent the default form submission
           
             var emailInput = document.getElementById('emailid');
-            console.log(emailInput.value.trim());
+            //console.log(emailInput.value.trim());
           
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(emailInput.value.trim())) {
               // Display an error message or take appropriate action
-              alert('Please enter a valid email address.');
+              alert('Please enter Details');
               return;
               // Stop further execution
             }
-          
+            var wamsg=document.getElementById('msg').value
             // Create the form data
             var formData = new FormData(event.target);
           
@@ -467,8 +493,34 @@
                 // Handle the response from the server
                 if (response.ok) {
                   // Display a success message or take appropriate action
-                  document.getElementById('contact-container').style.display = 'none';
+                  document.getElementById('spinner').classList.add('hidden');
+
                   document.getElementById('sucess-pop').classList.remove('hidden');
+                  const redirectURL = "https://wa.me/923254585673?text=" + encodeURIComponent(wamsg);
+
+                  function redirectToURL() {
+                    window.location.href = redirectURL;
+                  }
+                  // Start the countdown
+                  let count =10;
+                  const redirectingElement = document.getElementById("redirecting");
+
+                  function updateCountdown() {
+                    redirectingElement.innerHTML = `Redirecting to whatsapp in ${count} seconds...`;
+                    count--;
+
+                    // Redirect after 3 seconds
+                    if (count < 0) {
+                      redirectToURL();
+                    } else {
+                      setTimeout(updateCountdown, 1000); // Update every 1 second
+                    }
+                  }
+
+                  // Start the countdown on page load
+                  updateCountdown()
+
+                  
                 } else {
                   // Display an error message or take appropriate action
                   alert('Error submitting the form. Please try again.');
@@ -476,7 +528,7 @@
               })
               .catch(function(error) {
                 // Handle any errors that occur during the request
-                console.error('Error:', error);
+                //console.error('Error:', error);
               });
           });
           

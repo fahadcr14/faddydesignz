@@ -33,12 +33,17 @@
 <body class="bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 font-sans" style="">
   <!-- Navbar -->
   <section>
-  <nav class="p-4 text-2xl rounded-full shadow-xl" >
+  <nav class="p-4 text-2xl rounded-full shadow-xl" data-te-animation-init
+  data-te-animation-start="onClick"
+  data-te-animation-on-scroll="repeat"
+  data-te-animation-reset="true"
+  data-te-animation="[fade-in _1s_ease-in-out]">
       <!-- Your content here -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
+          <div class="flex items-center justify-between h-16"
+          >
               <div class="flex items-center">
-                  <a href="#" class="text-white font-extrabold ">Portfolio</a>
+                  <a href="/" class="text-white font-extrabold ">FaddyDesignz</a>
               </div>
                   <div class="hidden md:block">
                       <div class="ml-10 flex items-baseline space-x-4 text-lg">
@@ -67,7 +72,8 @@
             <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             <br><br>
           </div>
-      </div>
+        
+      </div > 
   </nav>
   
     
@@ -76,21 +82,39 @@
     <div class="flex items-center justify-center" style="top: 100px; position: relative">
         <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
           <div class="md:mt-10" style="margin-left:30px">
-            <h1 class="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+            <h1 class="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text"
+            data-te-animation-init
+        data-te-animation-start="onLoad"
+        data-te-animation-reset="true"
+        data-te-animation="[fade-in-left_1s_ease-in-out]">
               You Imagine We Build.<br>Start Your Journey Now.
             </h1>
             
             <br>
-            <p class="text-lg md:text-2xl font-regular text-green-200 text-left">Turn Your Dreams Into Reality With Us.</p>
-            <div class="text-green-200 h-16 md:h-20 w-44 md:w-60 rounded-full shadow-xl">
+            <p class="text-lg md:text-2xl font-regular text-green-200 text-left"
+            data-te-animation-init
+        data-te-animation-start="onLoad"
+        data-te-animation-reset="true"
+        data-te-animation="[fade-in-right_1s_ease-in-out]">Turn Your Dreams Into Reality With Us.</p>
+            <div class="text-green-200 h-16 md:h-20 w-44 md:w-60 rounded-full shadow-xl"
+            data-te-animation-init
+        data-te-animation-start="onLoad"
+        data-te-animation-reset="true"
+        data-te-animation="[fade-in-up_1s_ease-in-out]">
               <br>  
               <h1 class="text-center text-lg md:text-3xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
-                Get Started->
+                <a class="" href="service.html">
+                  Get Started 
+              </a>
               </h1>
             </div>
           </div>
           
-          <img src="{% static 'img/home.png' %}" alt="seo expert" class="rounded-full shadow-lg">
+          <img class="- p-2 rounded-full shadow-lg" src="{% static 'img/home.png' %}" alt="web expert" 
+          data-te-animation-init
+        data-te-animation-start="onLoad"
+        data-te-animation-reset="true"
+        data-te-animation="[fade-in-down_1s_ease-in-out]">
           
           <div class="flex justify-end md:hidden">
             <div class="bg-blue-500 h-20 transform rotate-45"></div>
@@ -99,22 +123,28 @@
         
       </div>
       <br>
-      <div class="shadow-lg rounded-2xl">
+      <div class="mt-8 shadow-lg rounded-2xl p-8" style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);">
         <h1 class="text-center text-3xl md:text-5xl font-semibold text-green-200  bg-clip-text">
             -Our Services-
+            <p class="-mt-4">&#95;</p>
         </h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" style="text-align:center;margin-right:25px">
-            <div class=" md:mt-10 shadow-lg rounded-2xl" style="margin-left:30px">
-                <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
-                        Seo Optimization
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center  " style="">
+            <div class=" md:mt-10 shadow-lg rounded-2xl" style=""
+            data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-left_1s_ease-in-out]">
+                <h1 class="md:mt-8 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                        Search Engine Optimization
                         </h1>
 
                         
-                    <p class="mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                    <p class="mt-4 md:mt-8 h-38 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
                             Unleash the Power of SEO Optimization. Get Traffic From Worldwide.
                             <br>
-                            <button class=" px-4 py-2 bg-indigo-500 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
-                                Learn More
+                            <button class="mt-4 md:mt-4 px-4 py-2 bg-indigo-700 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                              <a href="service.html" > Learn More</a>
                             </button>
                         </p>
                         
@@ -122,69 +152,94 @@
                 
                 </div>
                 
-                <div class=" md:mt-10 shadow-lg rounded-2xl" style="margin-left:30px">
-                    <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
-                    Web Developnment
+                <div class=" md:mt-10 shadow-lg rounded-2xl" style=""
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
+                  <h1 class="md:mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    Website Developnment
                     </h1>
                     <br>
-                    <p class="mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                    <p class="md:mt-8 h-40 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
                         Get Your Imagination into a Reality With our Full Stack Website Developnment Service.
                         <br>
-                        <button class=" px-4 py-2 bg-indigo-500 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
-                            Learn More
+                        <button class="mt-4 px-4 py-2 bg-indigo-700 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                          <a href="service.html" > Learn More</a>
+
                             </button>
                     </p>
                 
                 </div>
-                <div class="md:mt-10 shadow-lg rounded-2xl" style="margin-left:30px">
-                    <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
-                    Automation and Scraping
+                <div class=" md:mt-10 shadow-lg rounded-2xl" 
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-down_1s_ease-in-out]">
+                  <h1 class="mt-4 text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                    Automation Scraping
                     </h1>
                     
                     <br>
-                    <p class="mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                    <p class="md:mt-8 h-36 md:h-40 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
                         Automate Your Imagination into the Reality.
                         <br>
-                        <button class=" px-4 py-2 bg-indigo-500 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
-                            Learn More
+                        <button class="mt-4  md:mt-8 mx-auto px-4 py-2 bg-indigo-700 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                          <a href="service.html" > Learn More</a>
                         </button>
                     </p>
                 
                 </div>
             </div>
         </div>
-        <br>
-        <h1 class="text-center text-3xl md:text-5xl font-semibold text-pink-400 text-transparent bg-clip-text">
+        <h1 class="mt-4 text-center text-3xl md:text-5xl font-semibold text-green-200  bg-clip-text">
             -Why To Hire Us?-
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-transparent shadow-20 " style="text-align:center;padding:20px">
             <div class="md:mt-10 shadow-lg rounded-5xl">
                 <button class="px-4 py-2 bg-pink-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
-                <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                  <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text shadow-sm">
                     24/7 Support
                 </h1>
                 </button>
-                <p class="mt-8 h-28 md:h-24 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4">
+                <p class="mt-8 h-28 md:h-24 w-25 md:w-200 rounded-lg shadow-inner shadow-2xl text-lg md:text-xl text-green-200 text-center border-2 border-green-200 p-4"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-down_1s_ease-in-out]">
                 Our Talented Team Makes Sure to Respond to Any Query Immediately.
                 </p>
             </div>
             <div class="md:mt-10 shadow-lg rounded-5xl">
                 <button class="px-4 py-2 bg-pink-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
-                <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                  <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text shadow-sm">
                     Quality Work
                 </h1>
                 </button>
-                <p class="mt-8 h-24 md:h-24 w-25 md:w-200 rounded-lg shadow-lg text-lg md:text-xl font-regular text-green-200 text-center border-2 border-green-200 p-4">
+                <p class="mt-8 h-24 md:h-24 w-25 md:w-200 rounded-lg shadow-lg text-lg md:text-xl font-regular text-green-200 text-center border-2 border-green-200 p-4"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-left_1s_ease-in-out]">
                 We Believe in Quality over Quantity.
                 </p>
             </div>
             <div class="md:mt-10 shadow-lg rounded-5xl">
                 <button class="px-4 py-2 bg-pink-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
-                <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text">
+                  <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text shadow-sm">
                     Satisfaction
                 </h1>
                 </button>
-                <p class="mt-8 h-24 md:h-24 w-25 md:w-200 rounded-lg shadow-lg text-lg md:text-xl font-regular text-green-200 text-center border-2 border-green-200 p-4">
+                <p class="mt-8 h-24 md:h-24 w-25 md:w-200 rounded-lg shadow-lg text-lg md:text-xl font-regular text-green-200 text-center border-2 border-green-200 p-4"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in_1s_ease-in-out]">
                 Our No. 1 Priority is to Satisfy the Client's Needs.
                 </p>
             </div>
@@ -197,7 +252,12 @@
                 -Time Spent-
               </h1>
               <br>
-                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
                     <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text ">
                         10180+ Hours
                     </h1>
@@ -209,7 +269,12 @@
                 -Projects Done-
               </h1>
               <br>
-                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
                     <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text ">
                         100+
                     </h1>
@@ -221,7 +286,12 @@
                 -Deployed-
               </h1>
               <br>
-                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white">
+                <button class=" px-4 py-2 bg-green-300 text-white rounded-md text-sm font-medium shadow-md hover:bg-indigo-300 hover:text-white"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-down_1s_ease-in-out]">
                     <h1 class="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-indigo-800 via-purple-900 text-transparent bg-clip-text ">
                         90+
                     </h1>
@@ -229,60 +299,70 @@
         </div>
     </section>
         <!---Testimonials   -->
-        <section class="text-neutral-700 dark:text-neutral-300 p-8" style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);border-radius:110px;">
+        <section class="text-neutral-700 dark:text-neutral-300 p-8" 
+        >
             <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-              <h3 class="mb-6 text-3xl font-bold">What Our Clients Say</h3>
-              <p class="mb-6 pb-2 md:mb-12 md:pb-0 ">
+              <h1 class=" mb-6 text-center text-3xl md:text-5xl font-semibold text-green-200  bg-clip-text">Our Clients Review</h1>
+                <p class="mb-6 pb-2 md:mb-12 md:pb-0 text-white">
                 we are happy to work with such great clients . See what they say about our work.
               </p>
             </div>
           
             <!--First Testimonial-->
             <div class="grid gap-6 text-center md:flex justify-center ">
-              <div>
+              <div data-te-animation-init
+              data-te-animation-start="onScroll"
+              data-te-animation-on-scroll="repeat"
+              data-te-animation-reset="true"
+              data-te-animation="[fade-in-up_1s_ease-in-out]">
                 <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700"  >
-                    <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
+                  <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
                   <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                    <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
+                    <img src="{% static 'img/client.png' %}" />
                   </div>
                   <div class="p-6">
-                    <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>
+                    <h4 class="mb-4 text-2xl font-semibold">Osman Zayn</h4>
                     <hr />
-                    <p class="mt-4">
+                    <p class="mt-4 ">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
                         <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                       </svg>
-                      Neque cupiditate assumenda in maiores repudi mollitia
-                      architecto.
-                    </p>
+                      Thrilled with Faddydesignz's website development for Holywolf! Their expertise in payment gateway integration and site deployment delivered excellent results.                    </p>
                   </div>
                 </div>
               </div>
           
           
               <!--Second Testimonial-->
-              <div>
+              <div data-te-animation-init
+              data-te-animation-start="onScroll"
+              data-te-animation-on-scroll="repeat"
+              data-te-animation-reset="true"
+              data-te-animation="[fade-in_1s_ease-in-out]">
                 <div class=" rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
-                  <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
+                  <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
                   <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
                     <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
                   </div>
                   <div class="p-6">
                     <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>
                     <hr />
-                    <p class="mt-4">
+                    <p class="mt-4 justify-content">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
                         <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                       </svg>
-                      Neque cupiditate assumenda in maiores repudi mollitia
-                      architecto.
+                      We are very happy with Faddydesignz's work on the Sitemaps and Voting website!.They built it from the ground up  and did an amazing job that exceeded our expectations                      architecto.
                     </p>
                   </div>
                 </div>
               </div>
           
               <!--Third Testimonial-->
-              <div>
+              <div data-te-animation-init
+              data-te-animation-start="onScroll"
+              data-te-animation-on-scroll="repeat"
+              data-te-animation-reset="true"
+              data-te-animation="[fade-in-right_1s_ease-in-out]">
                 <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
                   <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
                   <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
@@ -295,8 +375,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
                         <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                       </svg>
-                      Delectus impedit saepe officiis ab aliquam repellat rem unde
-                      ducimus.
+                      Streaming automation site, expertly automated by Faddydesignz, making it seamless and efficient
                     </p>
                   </div>
                 </div>
@@ -318,7 +397,12 @@
                   href="#pythonintro"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="pythonintro">
+                  aria-controls="pythonintro"
+                  data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
                 <img src="{% static 'img/pythonicon.png' %}"/>
               </div>
               <div class="!visible hidden" id="pythonintro" data-te-collapse-item>
@@ -333,7 +417,12 @@
                   href="#jsintro"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="jsintro">
+                  aria-controls="jsintro"
+                  data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-left_1s_ease-in-out]">
                 <img src="{% static 'img/js.png' %}"/>
               </div>
               <div class="!visible hidden" id="jsintro" data-te-collapse-item>
@@ -348,7 +437,12 @@
                   href="#seleniumintro"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="seleniumintro">
+                  aria-controls="seleniumintro"
+                  data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
                 <img src="{% static 'img/selenium.png' %}"/>
               </div>
               <div class="!visible hidden" id="seleniumintro" data-te-collapse-item>
@@ -363,7 +457,12 @@
                   href="#djangointro"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="djangointro">
+                  aria-controls="djangointro"
+                  data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-left_1s_ease-in-out]">
                 <img src="{% static 'img/django.png' %}"/>
               </div>
               <div class="!visible hidden" id="djangointro" data-te-collapse-item>
@@ -378,7 +477,12 @@
                   href="#nodejsintro"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="nodejsintro">
+                  aria-controls="nodejsintro"
+                  data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
                 <img src="{% static 'img/node.png' %}"/>
               </div>
               <div class="!visible hidden" id="nodejsintro" data-te-collapse-item>
@@ -394,7 +498,12 @@
                   href="#reactjsintro"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="reactjsintro">
+                  aria-controls="reactjsintro"
+                  data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-down_1s_ease-in-out]">
                 <img src="{% static 'img/react.png' %}"/>
               </div>
               <div class="!visible hidden" id="reactjsintro" data-te-collapse-item>
@@ -405,18 +514,22 @@
               
             </div>
           </section>
-          <br><br>
           
 
           
     <div class="container my-24 mx-auto md:px-6 " >
         <!-- Section: Design Block -->
-        <section class="mb-32 text-center " style="padding:20px;">
-          <h2 class="mb-12 text-3xl font-bold">Our Talented Members</h2>
+        <section class="mb-32 text-center  " style="padding:20px;">
+          <h1 class="mb-12 text-3xl md:text-5xl font-bold">Our Talented Members</h1>
           <br>
       
           <div class="grid gap-4 md:grid-cols-3 xl:gap-x-12 ">
-            <div class="mb-6 lg:mb-0">
+            <div class="mb-6 lg:mb-0"
+            data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
               <div
                 class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
@@ -432,9 +545,9 @@
                   </svg>
                 </div>
                 <div class="p-6">
-                  <h5 class="mb-2 text-lg font-bold">Halley Frank</h5>
+                  <h5 class="mb-2 text-lg font-bold">Ahmed Ali</h5>
                   <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-                    Marketing Specialist
+                    Seo Specialist
                   </h6>
                   <ul class="mb-6 flex justify-center">
                     <li>
@@ -469,15 +582,18 @@
                     </li>
                   </ul>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                    blanditiis praesentium accusamus voluptatum deleniti atque
-                    corrupti.
+                    "Introducing our skilled SEO Specialist, Ahmed Hussain, who optimizes websites for enhanced online visibility and higher rankings.
                   </p>
                 </div>
               </div>
             </div>
       
-            <div class="mb-6 lg:mb-0">
+            <div class="mb-6 lg:mb-0"
+            data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-left_1s_ease-in-out]">
               <div
                 class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
@@ -493,7 +609,7 @@
                   </svg>
                 </div>
                 <div class="p-6">
-                  <h5 class="mb-2 text-lg font-bold">John Doe</h5>
+                  <h5 class="mb-2 text-lg font-bold">Yaseen Mehmet</h5>
                   <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
                     Web Developer
                   </h6>
@@ -530,15 +646,18 @@
                     </li>
                   </ul>
                   <p>
-                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                    placerat vulputate. Ut vulputate est non quam dignissim
-                    elementum. Donec a ullamcorper diam.
+                    Meet our talented team member Yaseen Mehmet, an expert in website development with Node.js, MERN, Django, React, and APIs.
                   </p>
                 </div>
               </div>
             </div>
       
-            <div class="">
+            <div class=""
+            data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-right_1s_ease-in-out]">
               <div
                 class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
@@ -554,9 +673,9 @@
                   </svg>
                 </div>
                 <div class="p-6">
-                  <h5 class="mb-2 text-lg font-bold">Lisa Trey</h5>
+                  <h5 class="mb-2 text-lg font-bold">Lili Trey</h5>
                   <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-                    Public Relations
+                    Project Manager
                   </h6>
                   <ul class="mb-6 flex justify-center">
                     <li>
@@ -591,9 +710,7 @@
                     </li>
                   </ul>
                   <p>
-                    Enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid commodi quis
-                    nostrum minima.
+                    Meet our dedicated Project Manager, Lily Trey, who ensures seamless coordination and successful project delivery.
                   </p>
                 </div>
               </div>
@@ -603,88 +720,111 @@
         <!-- Section: Design Block -->
       </div>
       <!--CTA Button-->
-      <br><br>
-      <div class="container my-24 mx-auto md:px-6 p-8">
+      <div class=" container my-24 mx-auto md:px-6 p-4 rounded-2xl" style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);">
         <!-- Section: Design Block -->
         <section class="mb-32 text-center">
-          <h2 class="mb-12 pb-4 text-center text-3xl font-bold">
+          <h1 class="mt-8 text-center text-3xl md:text-5xl font-semibold text-black  bg-clip-text"
+          data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in_1s_ease-in-out]">
             Projects we are proud of
-          </h2>
-      
-          <div class="mt-4 grid gap-6 md:grid-cols-3 xl:gap-x-12" >
+          </h1>
+          <br>
+          <div class="mt-8 grid gap-6 md:grid-cols-3 xl:gap-x-12" >
             <div class="mb-6 lg:mb-0 " >
               <div class="shadow-lg relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(255, 255, 255, 0.8),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700" style="background: rgb(255,216,0);background: linear-gradient(90deg, rgba(255,216,0,1) 0%, rgba(244,8,197,1) 100%, rgba(0,212,255,1) 100%);">
                 <div class="flex">
                   <div class="shadow-lg relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                     data-te-ripple-init data-te-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/002.webp" class="w-full" />
+                    <img src="{% static 'img/maps.png' %}" class="w-full" />
                     <a href="#!">
                       <div
                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
                     </a>
                   </div>
                 </div>
-                <div class="p-6">
-                  <h5 class="mb-4 text-lg font-bold">White city</h5>
-                  <p class="mb-6">
-                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                    placerat vulputate. Ut vulputate est non quam dignissim
-                    elementum. Donec a ullamcorper diam.
+                <div class="p-6"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-left_1s_ease-in-out]">
+                  <h5 class="mb-4 text-lg font-bold">Maps Voting</h5>
+                  <p class="mb-6 font-normal">
+                    Successfully built a full-stack Django project, Maps Voting, integrating Maps API and Geocoding APIs to place markers on a map with over 100,000 data points. Our team created a user-friendly dashboard, collecting valuable information from residents, ensuring smooth project execution
                   </p>
-                  <a href="#!" data-te-ripple-init data-te-ripple-color="light"
-                    class="inline-block rounded-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
+                  <a href="service.html" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block rounded-full bg-indigo-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
                     more</a>
                 </div>
               </div>
             </div>
       
-            <div class="mb-6 lg:mb-0">
+            <div class="mb-6 lg:mb-0"
+            data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in_1s_ease-in-out]">
                 <div class=" shadow-lg relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(255, 255, 255, 0.8),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700" style="background: rgb(255,216,0);background: linear-gradient(90deg, rgba(255,216,0,1) 0%, rgba(244,8,197,1) 100%, rgba(0,212,255,1) 100%);">
                     <div class="flex">
                   <div class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                     data-te-ripple-init data-te-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/066.webp" class="w-full" />
+                    <img src="{% static 'img/ecom.png' %}" class="w-full" />
                     <a href="#!">
                       <div
                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
                     </a>
                   </div>
                 </div>
-                <div class="p-6">
-                  <h5 class="mb-4 text-lg font-bold">A lonely bench</h5>
-                  <p class="mb-6">
-                    Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
-                    diam orci, nec ornare metus semper sed. Integer volutpat
-                    ornare erat sit amet rutrum.
+                <div class="p-6"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in_1s_ease-in-out]">
+                  <h5 class="mb-4 text-lg font-bold">E commerce Stores</h5>
+                  <p class="mb-6 font-normal">
+                    Efficiently developed a fully responsive E-commerce website with cutting-edge technologies, including React, Tailwind CSS, Django, and AWS deployment. Our expert team ensured seamless performance, delivering a faster, user-friendly experience for a full-stack E-commerce solution.
                   </p>
-                  <a href="#!" data-te-ripple-init data-te-ripple-color="light"
-                    class="inline-block rounded-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
+                  <a href="service.html" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block rounded-full bg-indigo-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
                     more</a>
                 </div>
               </div>
             </div>
       
-            <div class="mb-0">
+            <div class="mb-0"
+            data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in_1s_ease-in-out]">
                 <div class="shadow-lg relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(255, 255, 255, 0.8),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700" style="background: rgb(255,216,0);background: linear-gradient(90deg, rgba(255,216,0,1) 0%, rgba(244,8,197,1) 100%, rgba(0,212,255,1) 100%);">
                     <div class="flex">
                   <div class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
                     data-te-ripple-init data-te-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/191.webp" class="w-full" />
+                    <img src="{% static 'img/spotify.png' %}" class="w-full" />
                     <a href="#!">
                       <div
                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
                     </a>
                   </div>
                 </div>
-                <div class="p-6">
-                  <h5 class="mb-4 text-lg font-bold">E commerce Stores</h5>
-                  <p class="mb-6">
-                    Curabitur tristique, mi a mollis sagittis, metus felis mattis
-                    arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
-                    massa volutpat feugiat. Donec.
+                <div class="p-6"
+                data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-up_1s_ease-in-out]">
+                  <h5 class="mb-4 text-lg font-bold">Automation Bots</h5>
+                  <p class="mb-6 font-normal">
+                    Crafted an exceptional streaming automation bot for Spotify, streamlining music playback and enhancing the user experience. Our expert team ensures seamless functionality and efficiency, providing a top-notch streaming solution for Spotify users
                   </p>
-                  <a href="#!" data-te-ripple-init data-te-ripple-color="light"
-                    class="inline-block rounded-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
+                  <a href="service.html" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block rounded-full bg-indigo-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Read
                     more</a>
                 </div>
               </div>
@@ -695,7 +835,12 @@
       </div>
                     <!--Footer-->
           <!-- Footer section with social media icons and newsletter sign-up -->
-          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8" >
+          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8"
+          data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="repeat"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-up_1s_ease-in-out]"style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);" >
             <div class="container px-6 pt-6" >
               <!-- Social media icons container -->
               <div class="mb-6 flex justify-center shadow-lg " >
@@ -810,18 +955,20 @@
                     </div>
     
                     <!-- Newsletter sign-up input field -->
-                    <div class=" relative flex items-center  md:mb-0" data-te-input-wrapper-init>
+                    <div class="relative flex items-center md:mb-0 border-2 border-white p-2 md:p-4" >
                       <input
                         type="text"
                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                         id="exampleFormControlInput1"
-                        placeholder="Email address" />
+                        placeholder="Email address"
+                      />
                       <label
                         for="exampleFormControlInput1"
                         class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
                         >Email address
                       </label>
                     </div>
+                    
                     
     
                     <!-- Newsletter sign-up submit button -->
@@ -848,16 +995,16 @@
     
                   <ul class="mb-0 list-none">
                     <li>
-                      <a href="#!" class="text-white">Home</a>
+                      <a href="/" class="text-white">Home</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Services</a>
+                      <a href="service.html" class="text-white">Services</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Contac Us</a>
+                      <a href="contact.html" class="text-white">Contac Us</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">About Us</a>
+                      <a href="aboutus.html" class="text-white">About Us</a>
                     </li>
                   </ul>
                 </div>
@@ -867,10 +1014,10 @@
     
                   <ul class="mb-0 list-none">
                     <li>
-                      <a href="#!" class="text-white">support@faddydesignz.com</a>
+                      <a href="mailto:support@faddydesignz.com" class="text-white">support@faddydesignz.com</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Whatsapp +92 3254585673</a>
+                      <a href="https://wa.me/923254585673" class="text-white">Whatsapp +92 3254585673</a>
                     </li>
                     <li>
                       <a href="#!" class="text-white">Facebook</a>
@@ -887,7 +1034,7 @@
                   class="grid md:grid-rows-1 lg:grid-row-1  text-center rounded-2xl "
                   style="">
                   © 2023 Copyright:
-                  <a class="text-white" href="https://tailwind-elements.com/"
+                  <a class="text-white" 
                     >Faddy Designz</a
                     style="border-radius:200px">
                 
