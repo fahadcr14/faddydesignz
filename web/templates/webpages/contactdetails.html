@@ -45,12 +45,11 @@
                     <a href="/" class="text-white font-extrabold ">FaddyDesignz</a>
                 </div>
                     <div class="hidden md:block">
-                        <div class="ml-10 flex items-baseline space-x-4 text-lg">
-                          <a href="/" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Home</a>
-                          <a href="aboutus.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">About</a>
-                          <a href="service.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Services</a>
-                          <a href="contact.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Contact</a>
-                      </div>
+                      <div class="ml-10 flex items-baseline space-x-4 text-lg">
+                        <a href="dashboard.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Dashboard</a>
+                        <a href="contactdetails.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Forms</a>
+                        <a href="" onclick='Logout()'class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Logout</a>
+                    </div>
                 </div>
                 <div class="-mr-2 flex md:hidden">
                     <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
@@ -65,10 +64,9 @@
         <!-- Mobile menu -->
         <div class="hidden md:hidden" id="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1    px-3 w-full text-center ">
-              <a href="/" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-              <a href="aboutus.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-              <a href="service.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-              <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+              <a href="dashboard.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+              <a href="contactdetails.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Forms</a>
+              <a href="" onclick='Logout()'class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Log Out</a>
               <br><br>
             </div>
           
@@ -395,6 +393,45 @@
 
 
     <script>
+      function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Check if the cookie name matches the CSRF token cookie name
+            if (cookie.startsWith(name + '=')) {
+              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+            }
+          }
+        }
+        return cookieValue;
+      }
+      const csrftoken = getCookie('csrftoken');
+
+      function Logout(){
+        fetch("logout/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrftoken, // Include the CSRF token in the request headers
+          },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              window.location.href='auth.html'
+              return response;
+              
+            } else {
+              throw new Error('Error: ' + response.status);
+            }
+          })
+          .catch(function (error) {
+            // Handle any error that occurred during the Fetch request
+            alert('Not Found');
+          });
+      }
       // Create the parent div for the contact card
       // adding response to database 
       
