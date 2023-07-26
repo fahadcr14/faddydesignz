@@ -93,7 +93,7 @@ api_url = 'https://ipgeolocation.abstractapi.com/v1/?api_key=' + api_key
 
 @login_required
 def dashboard(request):
-    getip(request)
+    #getip(request)
     data = Analyticsdata.objects.all()
 
     # Create a list to hold the dictionaries
