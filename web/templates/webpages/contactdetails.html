@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="{% static 'css/output.css' %}" rel="stylesheet" />    
+    <style>
+        body {
+        }
+        
+        .bg-indigo-700{
+            border-radius:10px;
+            padding:12px;
+            top:-8px;
+            position:relative;
+
+        }
+        
+        
+        .hidden md:block{
+            display:none;
+        }
+        .font-medium{
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 font-sans" style="">
+  <!-- Navbar -->
+  <section>
+    <nav class="p-4 text-2xl rounded-full shadow-xl" data-te-animation-init
+    data-te-animation-start="onClick"
+    data-te-animation-on-scroll="once"
+    data-te-animation-reset="true"
+    data-te-animation="[fade-in _1s_ease-in-out]">
+        <!-- Your content here -->
+        <div class="max-w-7xl mx-auto px-4    px-6    px-8" >
+            <div class="flex items-center justify-between h-16"
+            >
+                <div class="flex items-center">
+                    <a href="/" class="text-white font-extrabold ">FaddyDesignz</a>
+                </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4 text-lg">
+                          <a href="/" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Home</a>
+                          <a href="aboutus.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">About</a>
+                          <a href="service.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Services</a>
+                          <a href="contact.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Contact</a>
+                      </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1    px-3 w-full text-center ">
+              <a href="/" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+              <a href="aboutus.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+              <a href="service.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+              <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+              <br><br>
+            </div>
+          
+        </div > 
+    </nav>
+    <!--DATA-->
+    
+    <section>
+      
+    <div class="w-full max-w-full flex-shrink px-4 text-center text-2xl p-4">
+        <h1 class="mb-5 mt-3 text-3xl font-bold">Dashboard Stats</h1>
+      </div>
+      
+      <div class="flex items-center justify-center " id="div_dashboard_container_exteneded">
+        
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4" id="contact_cards"style="width:95%;">
+          <div id='dropdown' class="relative flex justify-center bg-transparent" data-te-dropdown-ref>
+            <button
+            class="flex items-center whitespace-nowrap rounded-full  px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-transparent hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-transparent focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-transparent active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            type="button"
+              id="dropdownMenuButton1"
+              data-te-dropdown-toggle-ref
+              aria-expanded="false"
+              data-te-ripple-init
+              data-te-ripple-color="light">
+              All Responses
+              <span class="ml-2 w-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </button>
+            <ul
+              class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-te-dropdown-menu-ref>
+              <li>
+                <a id='alltime-responses'
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >All Responses</a
+                >
+              </li>
+              <li>
+                <a id='responed-dropdown'
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Responded</a
+                >
+              </li>
+              <li>
+                <a id='not-responed-dropdown'
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Not Responded</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+           
+        </div>
+    </div>
+    
+            <!--Dashboard-->
+      
+    </section>
+    
+    
+                 <!--Footer-->
+          <!-- Footer section with social media icons and newsletter sign-up -->
+          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8"
+          data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="once"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-up_1s_ease-in-out]"style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);" >
+            <div class="container px-6 pt-6" >
+              <!-- Social media icons container -->
+              <div class="mb-6 flex justify-center shadow-lg " >
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+    
+              <!-- Newsletter sign-up form -->
+              <div class="shadow-lg ">
+                <form action="">
+                  <div
+                    class="grid-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+                    <div class="md:mb-6 md:ml-auto">
+                      <p class="">
+                        <strong>Sign up for our newsletter</strong>
+                      </p>
+                    </div>
+    
+                    <!-- Newsletter sign-up input field -->
+                    <div class="relative flex items-center md:mb-0 border-2 border-white p-2 md:p-4" >
+                      <input
+                        type="text"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlInput1"
+                        placeholder="Email address"
+                      />
+                      <label
+                        for="exampleFormControlInput1"
+                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+                        >Email address
+                      </label>
+                    </div>
+                    
+                    
+    
+                    <!-- Newsletter sign-up submit button -->
+                    <div class="mb-6 md:mr-auto">
+                      <button
+                        type="submit"
+                        class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                        data-te-ripple-init
+                        data-te-ripple-color="light">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+    
+              <!-- Copyright information -->
+              
+    
+              <!-- Links section -->
+              <div class="grid md:grid-cols-2    grid-cols-4" style="">
+                <div class="mb-6">
+                  <h5 class="mb-2.5 font-bold uppercase">Company</h5>
+    
+                  <ul class="mb-0 list-none">
+                    <li>
+                      <a href="/" class="text-white">Home</a>
+                    </li>
+                    <li>
+                      <a href="service.html" class="text-white">Services</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="text-white">Contac Us</a>
+                    </li>
+                    <li>
+                      <a href="aboutus.html" class="text-white">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="mb-6">
+                  <h5 class="mb-2.5 font-bold uppercase">Details</h5>
+    
+                  <ul class="mb-0 list-none">
+                    <li>
+                      <a href="mailto:support@faddydesignz.com" class="text-white">support@faddydesignz.com</a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/923254585673" class="text-white">Whatsapp +92 3254585673</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Facebook</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+                
+              <div
+                  class="grid md:grid-rows-1    grid-row-1  text-center rounded-2xl "
+                  style="">
+                  © 2023 Copyright:
+                  <a class="text-white" 
+                    >Faddy Designz</a
+                    style="border-radius:200px">
+                
+                </div>
+            <!-- Copyright section -->
+          </footer>
+        
+          <script
+          src="{% static 'tw-elements/dist/js/tw-elements.umd.min.js' %}"
+          type="text/javascript"></script>
+    <script>
+        // JavaScript for handling mobile menu toggle
+        const btn = document.querySelector('.md\\:hidden > button');
+        const menu = document.querySelector('.md\\:hidden ~ .hidden');
+        const navbar = document.getElementById('hidden md:hidden');
+    
+        btn.addEventListener('click', function() {
+            if (navbar.style.display == "block") {
+                btn.innerHTML = `<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                1</svg>`;
+                navbar.style.display = "none";
+                
+            } else {
+                btn.innerHTML = `<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>`;
+                navbar.style.display = "block";
+                
+                
+            }
+        });
+        // Initialization for ES Users
+        
+    </script>
+    <!-- Include Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Include the Moment.js date adapter for Chart.js -->
+
+
+    <script>
+      // Create the parent div for the contact card
+      // adding response to database 
+      
+       function postresponded(id) {
+        // Get the CSRF token from the cookie
+        const csrftoken = getCookie('csrftoken');
+        
+
+        // Make the fetch request to your Django view
+        return fetch("inserting_responded?id=" + id, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrftoken, // Include the CSRF token in the request headers
+          },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error('Error: ' + response.status);
+            }
+          }).catch(function (error) {
+            // Handle any error that occurred during the Fetch request
+            alert('Not Found');
+          });
+      }
+      /*postresponded('fahd')
+        .then(function(data) {
+            console.log(data);
+        })
+        .catch(function(error) {
+            console.error('Error:', error);
+            alert('Not Found');
+        });*/
+      
+      // Helper function to get the CSRF token from the cookie
+      function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Check if the cookie name matches the CSRF token cookie name
+            if (cookie.startsWith(name + '=')) {
+              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+            }
+          }
+        }
+        return cookieValue;
+      }
+      
+      function create_contact_views(i){
+        var contactCardDiv = document.createElement("div");
+        contactCardDiv.id='cardsbyjs'
+        contactCardDiv.className = "mb-10 w-full px-2";
+        contactCardDiv.innerHTML = `
+            <div class="h-full rounded-xl  shadow-2xl">
+                <div id='' x-data="{ tooltips: false }" class="relative px-6 pt-6 text-sm font-semibold">
+                    <div class="flex flex-cols justify-between   ">
+                        <h2 id="parentcanvas${i}" class="mt-4 self-center text-3xl font-bold text-white ">${i}</h2>
+
+                        <div id="responded_color${i}"class="relative h-14 w-20 self-center rounded-xl bg-rose-500 text-center text-pink-50">
+                            <h2 id="detailed_views" class="mt-4 self-center text-xl font-bold">${i}</h2>
+                        </div>
+                       
+    
+                       
+                    </div>
+                    <div x-on:mouseover="tooltips = true" x-on:mouseleave="tooltips = false" class="text-green-500 ltr:float-right rtl:float-left">
+                        <!--Write +15%-->
+                        <div class="absolute bottom-full top-auto mb-3" x-show.transition.origin.top="tooltips" style="display: none;">
+                            <div class="z-40 -mb-1 w-32 rounded-lg bg-black p-2 text-center text-sm leading-tight text-white shadow-lg">Since last month</div>
+                            <div class="absolute bottom-0 -mb-2 w-1 -rotate-45 transform bg-black p-1 ltr:ml-6 rtl:mr-6"></div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="msg_details${i}" class="p-4 self-center text-xl font-normal"></h2>
+                <div class="px-4 relative h-9 w-20 text-center justify-start ">
+                    <h2 id="detailed_views" class=" mt-4 self-center text-green-200 text-xl font-bold">Service</h2>
+
+                </div>
+                <h2 id="service${i}" class="px-4 self-center text-xl font-bold text-white">h</h2>
+
+                <div class="flex  justify-start gap-8 px-4 py-4 p-4 space-x-4">
+                    <div class="grow relative h-9 w-20 text-center rounded-xl bg-transparent text-center text-white">
+                        <h2 id="detailed_views" class="mt-2 self-center text-xl text-green-200 font-bold">Email</h2>
+
+                        <h2 id="email${i}" class="mt-4 self-center text-sm font-bold"></h2>
+                    </div>
+                
+                    <!-- Add the gap here using 'space-x' utility -->
+                
+                    <div class="grow relative h-9 w-20 text-center rounded-xl bg-transparent text-center text-white">
+                        <h2 id="detailed_views" class="mt-2 self-center text-green-200 text-xl font-bold">Phone</h2>
+
+                        <h2 id="phone${i}" class="mt-4 self-center text-sm font-bold"></h2>
+                    </div>
+                </div>
+                
+                <div class="flex flex-cols justify-start px-4 py-8 gap-8 ">
+                    <button id='emailbtn${i}'class="grow relative h-9 w-20 text-center rounded-full bg-transparent shadow-xl text-white hover:bg-indigo-300 text-center text-black">
+                        <h2 id="detailed_views" class=" self-center text-xm font-bold">Send Email</h2>
+                        
+                    </button>
+                   
+                    <button id='phonebtn${i}' class="grow relative h-10 w-20 text-center rounded-full bg-transparent shadow-xl text-white hover:bg-indigo-300 text-center text-black send-whatsapp-btn">
+                        <h2 id="detailed_views" class=" self-center text-sm  font-bold">
+                            <i class="fa fa-whatsapp" style="font-size:36px"></i>
+
+                            Send Message
+                        </h2>
+                        
+                    </button>
+
+                    
+                </div>
+                
+            </div>
+        `;
+        
+        // Get the parent div element with the id "contact_cards"
+        var parentDiv = document.getElementById("contact_cards");
+
+        // Append the contact card div to the parent div
+        parentDiv.appendChild(contactCardDiv);
+        }
+        var json_contact_forms= JSON.parse('{{ json_contact|safe }}');
+        console.log(json_contact_forms)
+        cards_data_adder(json_contact_forms)
+        function cards_data_adder(json_contact_forms){
+        for (var i =0; i<json_contact_forms.length;i++){
+            var item = json_contact_forms[i];
+            add_info_in_cards(i,item)
+    }
+}
+            // Get the button element by its ID
+        // adding menu dropdown functionality
+        document.getElementById('dropdownMenuButton1').innerHTML='All Responses('+json_contact_forms.length+')';
+
+        document.getElementById('responed-dropdown').addEventListener('click',function(event){
+            document.getElementById('dropdownMenuButton1').innerHTML='Responded';
+            delete_all_cards()
+            cards_data_adder_dp(json_contact_forms,'yes')
+            //cards_data_adder_dp(json_contact_forms)
+            
+        })
+        document.getElementById('not-responed-dropdown').addEventListener('click',function(event){
+            document.getElementById('dropdownMenuButton1').innerHTML='Not Responded';
+
+            delete_all_cards()
+            cards_data_adder_dp(json_contact_forms,'no')
+            //cards_data_adder_dp(json_contact_forms)
+            
+        })
+        document.getElementById('alltime-responses').addEventListener('click',function(event){
+            document.getElementById('dropdownMenuButton1').innerHTML='All Responses('+json_contact_forms.length+')';
+
+            delete_all_cards()
+            cards_data_adder(json_contact_forms)
+            //cards_data_adder_dp(json_contact_forms)
+            
+        })
+        // dynamically addition by dropdown
+        function cards_data_adder_dp(json_contact_forms,st){
+            var no_of_rows=0
+            for (var i =0; i<json_contact_forms.length;i++){
+                var item = json_contact_forms[i];
+                
+                if (item.responded==st){
+                    add_info_in_cards(i,item)
+                    no_of_rows+=1
+                    if (item.responded=='no'){
+                        document.getElementById('dropdownMenuButton1').innerHTML='Not Responded('+no_of_rows+')';
+
+                    }else{
+                        document.getElementById('dropdownMenuButton1').innerHTML='Responded('+no_of_rows+')';
+
+                    }
+                    
+        }
+      }
+    }
+        function add_info_in_cards(i,item){
+            create_contact_views(i)
+            naameofperson=document.getElementById('parentcanvas'+i)
+            naameofperson.innerHTML=item.name
+            msg_details=document.getElementById('msg_details'+i)
+            msg_details.innerHTML=item.message;
+            services=document.getElementById('service'+i)
+            services.innerHTML=item.service
+
+            document.getElementById('email'+i).innerHTML=item.email
+            document.getElementById('phone'+i).innerHTML=item.phone
+            var button = document.getElementById(`phonebtn${i}`);
+            const buttonTextt = '<i class="fa fa-whatsapp" style="font-size: 18px;"></i>';
+
+            // Set the innerHTML of the button to the created content
+            var link = document.createElement("a");
+            link.innerHTML = buttonTextt;
+
+            msg='Hello This is Faddy Designz Representative How we can help you ?'
+            link.href = `https://wa.me/${item.phone}?text= + ${encodeURIComponent(msg)};`;
+            link.target = "_blank";
+            if (item.responded=='yes'){
+                console.log('responded',item.responded)
+            document.getElementById('responded_color'+i).classList.remove('bg-rose-500')
+            document.getElementById('responded_color'+i).classList.add('bg-lime-500')}
+                
+            const buttonText = document.createTextNode("Send");
+
+            // Append the text node to the anchor element
+            link.appendChild(buttonText);
+
+            // Clear any existing content inside the buttonF
+            button.innerHTML = "";
+            // Append the anchor element to the button
+            button.appendChild(link);
+            button.onclick =   function(itemId) {
+                return function() {
+                onclickrespond(itemId);
+                };
+            }(item.id)
+            // adding email button Links
+            // Assuming 'i' is the index of the contact form
+
+        // Get the button element by its ID
+        const buttonemail = document.getElementById(`emailbtn${i}`);
+
+        // Create an anchor element
+        const linkemail = document.createElement("a");
+        function onclickrespond(itemId){
+            console.log('item',itemId)
+            postresponded(itemId)
+                .then(function(data) {
+                    console.log(data);
+                    // Process the response data here if needed
+                })
+                .catch(function(error) {
+                    console.error('Error:', error);
+                    alert('Not Found');
+                });
+        }
+        // Set the href attribute to the mailto link
+        const subject = "from Faddy Designz"; // You can change the subject as needed
+        const body = "How can we help you?"; // You can change the body as needed
+        linkemail.href = `mailto:${item.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Set the target attribute to '_blank' to open the link in a new tab (optional for mailto links)
+        linkemail.target = "_blank";
+
+        // Create the text node for the button text (e.g., "Send Email")
+        const buttonTextemail = document.createTextNode("Send Email");
+
+        // Append the text node to the anchor element
+        linkemail.appendChild(buttonTextemail);
+
+        // Clear any existing content inside the button
+        buttonemail.innerHTML = "";
+
+        // Append the anchor element to the button
+        buttonemail.appendChild(linkemail);
+        buttonemail.onclick =   function(itemId) {
+            return function() {
+            onclickrespond(itemId);
+            };
+        }(item.id)
+
+    }
+        // delete all cards for dropdwon functionality
+        function delete_all_cards(){
+            //document.querySelector('mb-10 w-full px-2').innerHTML=''
+            var parentDiv = document.getElementById("contact_cards");
+            var dropdownChild = document.getElementById("dropdown");
+
+            if (parentDiv && dropdownChild) {
+            // Loop through each child of the parentDiv
+            var children = parentDiv.children;
+            for (var i = children.length - 1; i >= 0; i--) {
+                var child = children[i];
+                // Check if the child is not the dropdownChild, then remove it
+                if (child !== dropdownChild) {
+                parentDiv.removeChild(child);
+                }
+            }
+            }
+        }
+      </script>
+      <!-- Include Moment.js -->
+
+
+</body>
+    
+</html>

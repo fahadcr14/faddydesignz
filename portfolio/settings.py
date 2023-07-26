@@ -140,7 +140,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+LOGIN_URL = '/login_view/'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.elasticemail.com'
 EMAIL_USE_TLS = True
@@ -148,4 +148,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER ='holywolf152@gmail.com'
 EMAIL_HOST_PASSWORD = '4BC4389E9D553B756EDE731E22BB1E83E9E2'
 
-DEFAULT_FROM_EMAIL = 'support@holywolfdesigns.com'
+
+DEFAULT_FROM_EMAIL = 'swupport@holywolfdesigns.com'
+
+# cookies csrf 
+
+CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SECURE = True

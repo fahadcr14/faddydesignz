@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    {% load static %}
+
+    <link href="{% static 'css/output.css' %}" rel="stylesheet" />    
+    <style>
+        body {
+        }
+        
+        .bg-indigo-700{
+            border-radius:10px;
+            padding:12px;
+            top:-8px;
+            position:relative;
+
+        }
+        
+        
+        .hidden md:block{
+            display:none;
+        }
+        .font-medium{
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 font-sans" style="">
+  <!-- Navbar -->
+  <section>
+    <nav class="p-4 text-2xl rounded-full shadow-xl" data-te-animation-init
+    data-te-animation-start="onClick"
+    data-te-animation-on-scroll="once"
+    data-te-animation-reset="true"
+    data-te-animation="[fade-in _1s_ease-in-out]">
+        <!-- Your content here -->
+        <div class="max-w-7xl mx-auto px-4    px-6    px-8" >
+            <div class="flex items-center justify-between h-16"
+            >
+                <div class="flex items-center">
+                    <a href="/" class="text-white font-extrabold ">FaddyDesignz</a>
+                </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4 text-lg">
+                          <a href="dashboard.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Dashboard</a>
+                          <a href="contactdetails.html" class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Forms</a>
+                          <a href="" onclick='Logout()'class="text-gray-300 hover:bg-indigo-300 hover:text-white px-3 py-2 rounded-md  font-medium">Logout</a>
+                      </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1    px-3 w-full text-center ">
+              <a href="/" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+              <a href="aboutus.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+              <a href="service.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+              <a href="contact.html" class="text-green-200 hover:bg-indigo-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+              <br><br>
+            </div>
+          
+        </div > 
+    </nav>
+    <!--DATA-->
+    
+    <section>
+      
+    <div class="w-full max-w-full flex-shrink px-4 text-center text-2xl p-4">
+        <h1 class="mb-5 mt-3 text-3xl font-bold" id="front-text">
+         
+
+          Dashboard Stats</h1>
+      </div>
+      
+      <div class="flex items-center justify-center hidden" id="div_dashboard_container_exteneded">
+        
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 " style="width:90%" >
+          <div id='dropdown' class="relative flex justify-center bg-transparent" data-te-dropdown-ref>
+            <button
+            class="flex items-center whitespace-nowrap rounded-full  px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-transparent hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-transparent focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-transparent active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            type="button"
+              id="dropdownMenuButton1"
+              data-te-dropdown-toggle-ref
+              aria-expanded="false"
+              data-te-ripple-init
+              data-te-ripple-color="light">
+              All time VIews
+              <span class="ml-2 w-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </button>
+            <ul id="dropdownmenu"
+              class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-te-dropdown-menu-ref>
+              <li>
+                <a id='24'
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >24 Hours</a
+                >
+              </li>
+              <li>
+                <a id='48'
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >48 Hours</a
+                >
+              </li>
+              <li>
+                <a id='7days'
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >7 days</a
+                >
+              </li>
+            </ul>
+          </div>
+            <div class="mb-10 w-full ">
+                <div id="view_chart"class="h-full rounded-xl bg-white shadow-2xl hidden">
+                    <div id='parentcanvas'x-data="{ tooltips: false }" class="relative px-6 pt-6 text-sm font-semibold">
+                        Total Views
+                        <div x-on:mouseover="tooltips = true" x-on:mouseleave="tooltips = false" class="text-green-500 ltr:float-right rtl:float-left">
+                            <!--Write +15%-->
+                            <div class="absolute bottom-full top-auto mb-3" x-show.transition.origin.top="tooltips" style="display: none;">
+                                <div class="z-40 -mb-1 w-32 rounded-lg bg-black p-2 text-center text-sm leading-tight text-white shadow-lg">Since last month</div>
+                                <div class="absolute bottom-0 -mb-2 w-1 -rotate-45 transform bg-black p-1 ltr:ml-6 rtl:mr-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between px-6 py-4">
+                        <div class="relative h-14 w-14 self-center rounded-full bg-rose-500 text-center text-pink-50">
+                            <img src="{% static 'img/view-svgrepo-com.svg' %}" />
+                        </div>
+                        <h2 id="detailed_views"class="self-center text-3xl font-bold"></h2>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a class="text-sm hover:text-indigo-500" href="#">View more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            <!--Dashboard-->
+      <div class="flex items-center justify-center " id="div_dashboard_container" >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 "style="width:80%">
+    
+            <div class="mb-10 w-full max-w-full flex-shrink">
+            <div id="div_totalviews"class="h-full rounded-xl bg-white shadow-2xl">
+                <div x-data="{ tooltips: false }" class="relative px-6 pt-6 text-sm font-semibold">
+                Total Views
+                <div x-on:mouseover="tooltips = true" x-on:mouseleave="tooltips = false" class="text-green-500 ltr:float-right rtl:float-left">
+                    <!--Write +15%-->
+                    <div class="absolute bottom-full top-auto mb-3" x-show.transition.origin.top="tooltips" style="display: none;">
+                    <div class="z-40 -mb-1 w-32 rounded-lg bg-black p-2 text-center text-sm leading-tight text-white shadow-lg">Since last month</div>
+                    <div class="absolute bottom-0 -mb-2 w-1 -rotate-45 transform bg-black p-1 ltr:ml-6 rtl:mr-6"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="flex flex-row justify-between px-6 py-4">
+                <div class="relative h-14 w-14 self-center rounded-full bg-rose-500 text-center text-pink-50">
+                    <img src="{% static 'img/view-svgrepo-com.svg' %}" />
+
+                </div >
+                <h2 id="total_views" class="self-center text-3xl font-bold">421</h2>
+                </div>
+                <div class="px-6 pb-6">
+                <a id="views_viewmore"class="text-sm hover:text-indigo-500" href="#">View more...</a>
+                </div>
+            </div>
+            </div>
+            <div class="mb-10 w-full max-w-full flex-shrink     ">
+            <div class="h-full rounded-xl bg-white shadow-2xl">
+                <div x-data="{ tooltips: false }" class="relative px-6 pt-6 text-sm font-semibold">
+                No of Users
+                <div x-on:mouseover="tooltips = true" x-on:mouseleave="tooltips = false" class="text-green-500 ltr:float-right rtl:float-left">
+                    <!--Write +15%-->
+                    <div class="absolute bottom-full top-auto mb-3" x-show.transition.origin.top="tooltips" style="display: none;">
+                    <div class="z-40 -mb-1 w-32 rounded-lg bg-black p-2 text-center text-sm leading-tight text-white shadow-lg">Since last month</div>
+                    <div class="absolute bottom-0 -mb-2 w-1 -rotate-45 transform bg-black p-1 ltr:ml-6 rtl:mr-6"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="flex flex-row justify-between px-6 py-4">
+                <div class="relative h-14 w-14 self-center rounded-full bg-yellow-500 text-center text-yellow-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 transform" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+                        </svg>
+                </div>
+                <h2 id="no_of_users"class="self-center text-3xl font-bold"></h2>
+                </div>
+                <div class="px-6 pb-6">
+                </div>
+            </div>
+            </div>
+            <div class="mb-10 w-full max-w-full flex-shrink      ">
+            <div class="h-full rounded-xl bg-white shadow-2xl">
+                <div x-data="{ tooltips: false }" class="relative px-6 pt-6 text-sm font-semibold">
+                No Of Cities
+                <div x-on:mouseover="tooltips = true" x-on:mouseleave="tooltips = false" class="text-pink-500 ltr:float-right rtl:float-left">
+                    <div class="absolute bottom-full top-auto mb-3" x-show.transition.origin.top="tooltips" style="display: none;">
+                    <div class="z-40 -mb-1 w-32 rounded-lg bg-black p-2 text-center text-sm leading-tight text-white shadow-lg">Since last month</div>
+                    <div class="absolute bottom-0 -mb-2 w-1 -rotate-45 transform bg-black p-1 ltr:ml-6 rtl:mr-6"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="flex flex-row justify-between px-6 py-4">
+                <div class="relative h-14 w-14 self-center rounded-full bg-green-500 text-center text-green-50">
+                    <img src="{% static 'img/view-svgrepo-com.svg' %}" />
+                </div>
+                <h2 id="no_of_cities"class="self-center text-3xl font-bold"></h2>
+                </div>
+                <div class="px-6 pb-6">
+                <a id="cities_viewmore"class="text-sm hover:text-indigo-500" href="#">View more...</a>
+                </div>
+            </div>
+            </div>
+            <div class="mb-10 w-full max-w-full flex-shrink       ">
+                <div class="h-full rounded-xl bg-white shadow-2xl">
+                    <div x-data="{ tooltips: false }" class="relative px-6 pt-6 text-sm font-semibold">Realtime 1 Hour <span class="mt-1 h-2 w-2 animate-pulse rounded-full bg-green-500 ltr:float-right rtl:float-left"></span></div>
+                    <div class="flex flex-row justify-between px-6 py-4">
+                    <div class="relative h-14 w-14 self-center rounded-full bg-indigo-500 text-center text-indigo-50">
+                        <img src="{% static 'img/icons8-youtube-live.svg' %}" />
+
+                    </div>
+                    <h2 id="realtime_views"class="self-center text-3xl font-bold"></h2>
+                    </div>
+                    <div class="px-6 pb-6">
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    
+                 <!--Footer-->
+          <!-- Footer section with social media icons and newsletter sign-up -->
+          <footer class="bg-black mt-12 bg-neutral-900 text-center text-green-200 shadow-lg rounded-lg p-8"
+          data-te-animation-init
+            data-te-animation-start="onScroll"
+            data-te-animation-on-scroll="once"
+            data-te-animation-reset="true"
+            data-te-animation="[fade-in-up_1s_ease-in-out]"style="box-shadow: 0 0 100px rgba(255, 0, 0, 0.5);" >
+            <div class="container px-6 pt-6" >
+              <!-- Social media icons container -->
+              <div class="mb-6 flex justify-center shadow-lg " >
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                </a>
+    
+                <a
+                  href="#!"
+                  type="button"
+                  class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  data-te-ripple-init
+                  data-te-ripple-color="light">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto h-full w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+    
+              <!-- Newsletter sign-up form -->
+              <div class="shadow-lg ">
+                <form action="">
+                  <div
+                    class="grid-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+                    <div class="md:mb-6 md:ml-auto">
+                      <p class="">
+                        <strong>Sign up for our newsletter</strong>
+                      </p>
+                    </div>
+    
+                    <!-- Newsletter sign-up input field -->
+                    <div class="relative flex items-center md:mb-0 border-2 border-white p-2 md:p-4" >
+                      <input
+                        type="text"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-200 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlInput1"
+                        placeholder="Email address"
+                      />
+                      <label
+                        for="exampleFormControlInput1"
+                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-200 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-neutral-200 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+                        >Email address
+                      </label>
+                    </div>
+                    
+                    
+    
+                    <!-- Newsletter sign-up submit button -->
+                    <div class="mb-6 md:mr-auto">
+                      <button
+                        type="submit"
+                        class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                        data-te-ripple-init
+                        data-te-ripple-color="light">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+    
+              <!-- Copyright information -->
+              
+    
+              <!-- Links section -->
+              <div class="grid md:grid-cols-2    grid-cols-4" style="">
+                <div class="mb-6">
+                  <h5 class="mb-2.5 font-bold uppercase">Company</h5>
+    
+                  <ul class="mb-0 list-none">
+                    <li>
+                      <a href="/" class="text-white">Home</a>
+                    </li>
+                    <li>
+                      <a href="service.html" class="text-white">Services</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="text-white">Contac Us</a>
+                    </li>
+                    <li>
+                      <a href="aboutus.html" class="text-white">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="mb-6">
+                  <h5 class="mb-2.5 font-bold uppercase">Details</h5>
+    
+                  <ul class="mb-0 list-none">
+                    <li>
+                      <a href="mailto:support@faddydesignz.com" class="text-white">support@faddydesignz.com</a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/923254585673" class="text-white">Whatsapp +92 3254585673</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Facebook</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+                
+              <div
+                  class="grid md:grid-rows-1    grid-row-1  text-center rounded-2xl "
+                  style="">
+                  © 2023 Copyright:
+                  <a class="text-white" 
+                    >Faddy Designz</a
+                    style="border-radius:200px">
+                
+                </div>
+            <!-- Copyright section -->
+          </footer>
+        
+          <script
+          src="{% static 'tw-elements/dist/js/tw-elements.umd.min.js' %}"
+          type="text/javascript"></script>
+    <script>
+        // JavaScript for handling mobile menu toggle
+        const btn = document.querySelector('.md\\:hidden > button');
+        const menu = document.querySelector('.md\\:hidden ~ .hidden');
+        const navbar = document.getElementById('hidden md:hidden');
+    
+        btn.addEventListener('click', function() {
+            if (navbar.style.display == "block") {
+                btn.innerHTML = `<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                1</svg>`;
+                navbar.style.display = "none";
+                
+            } else {
+                btn.innerHTML = `<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>`;
+                navbar.style.display = "block";
+                
+                
+            }
+        });
+        // Initialization for ES Users
+        
+        
+    </script>
+    <!-- Include Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://kit.fontawesome.com/d2624f219c.js" crossorigin="anonymous"></script>
+
+<!-- Include the Moment.js date adapter for Chart.js -->
+
+
+    <script>
+      function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Check if the cookie name matches the CSRF token cookie name
+            if (cookie.startsWith(name + '=')) {
+              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+            }
+          }
+        }
+        return cookieValue;
+      }
+      const csrftoken = getCookie('csrftoken');
+
+      function Logout(){
+        fetch("logout/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrftoken, // Include the CSRF token in the request headers
+          },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              window.location.href='auth.html'
+              return response;
+              
+            } else {
+              throw new Error('Error: ' + response.status);
+            }
+          })
+          .catch(function (error) {
+            // Handle any error that occurred during the Fetch request
+            alert('Not Found');
+          });
+      }
+      function getrealtimeobjects(hours) {
+        // Make the fetch request to your Django view
+        return fetch("realtime_views?hour=" + hours, {
+          method: "GET",
+        })
+          .then(function (response) {
+            if (response.ok) {
+              return response.json();
+            } else {
+              throw new Error('Error: ' + response.status);
+            }
+          })
+          .catch(function (error) {
+            // Handle any error that occurred during the Fetch request
+            alert('Not Found');
+          });
+      }
+      const dropdowntext=document.getElementById('dropdownMenuButton1')
+      
+      function realtime_hours_view_click_event(){
+      document.getElementById('24Hours').addEventListener('click', function (event) {
+        console.log('24');
+        dropdowntext.innerHTML='24 Hours'
+
+        getrealtimeobjects(24)
+          .then(function (realdata) {
+            console.log(realdata);
+            document.getElementById('detailed_views').innerHTML = realdata.length;
+            // Get the canvas element
+            // Get the canvas element
+            var chartCanvas = document.getElementById("chart");
+
+            // Remove the canvas from the DOM
+            if (chartCanvas) {
+              chartCanvas.remove();
+            }
+                        // Create the canvas element
+            
+
+
+
+            real_data_into_list_dropdown(realdata)
+            // Here, the 'realdata' is available, and you can use it as needed.
+            // Update the UI or perform any other operations with the data here
+          });
+      });
+      document.getElementById('48Hours').addEventListener('click', function (event) {
+        console.log('48');
+        dropdowntext.innerHTML='48 Hours'
+        getrealtimeobjects(48)
+          .then(function (realdata) {
+            console.log(realdata);
+            document.getElementById('detailed_views').innerHTML = realdata.length;
+            // Get the canvas element
+            // Get the canvas element
+            var chartCanvas = document.getElementById("chart");
+
+            // Remove the canvas from the DOM
+            if (chartCanvas) {
+              chartCanvas.remove();
+            }
+                        // Create the canvas element
+            
+
+
+
+            real_data_into_list_dropdown(realdata)
+            // Here, the 'realdata' is available, and you can use it as needed.
+            // Update the UI or perform any other operations with the data here
+          });
+      });
+      document.getElementById('7days').addEventListener('click', function (event) {
+        console.log('7days');
+        dropdowntext.innerHTML='7 Days'
+
+        getrealtimeobjects(24*7)
+          .then(function (realdata) {
+            console.log(realdata);
+            document.getElementById('detailed_views').innerHTML = realdata.length;
+            // Get the canvas element
+            // Get the canvas element
+            var chartCanvas = document.getElementById("chart");
+
+            // Remove the canvas from the DOM
+            if (chartCanvas) {
+              chartCanvas.remove();
+            }
+                        // Create the canvas element
+            
+
+
+
+            real_data_into_list_dropdown(realdata)
+            // Here, the 'realdata' is available, and you can use it as needed.
+            // Update the UI or perform any other operations with the data here
+          });
+      });}
+        // Step 1 to Step 2 transition
+        var jsonReal= JSON.parse('{{ json_realtime|safe }}');
+        var json_realtime_all= JSON.parse('{{ json_realtime_all|safe }}');
+        var jsonData= JSON.parse('{{ json_data|safe }}');
+        console.log(jsonData);
+        var cityData = {};
+        var total_views=0
+        var ip_list=[]
+        var no_of_cities=[]
+        let realtime_ips=[]
+        let realtime_time=[]
+        real_data_into_list(json_realtime_all)
+
+        function real_data_into_list(json_realtime_all){
+        
+        for (var i =0; i<json_realtime_all.length;i++){
+            var item = json_realtime_all[i];
+            if (realtime_time.includes(item.time.split(':')[0])) {
+              realtime_ips[realtime_time.indexOf(item.time.split(':')[0])]+=1;
+            } else {
+              realtime_ips.push(item.total_view_count);
+              realtime_time.push(item.time.split(':')[0])
+            }
+            
+        }
+      }
+      function real_data_into_list_dropdown(json_realtime_all){
+        var days=[];
+        var allviews=[];
+        for (var i =0; i<json_realtime_all.length;i++){
+            var item = json_realtime_all[i];
+            if (days.includes(item.time.split(':')[0])) {
+              allviews[days.indexOf(item.time.split(':')[0])]+=1;
+            } else {
+              allviews.push(item.total_view_count);
+              days.push(item.time.split(':')[0])
+            }
+        }
+        draw_chart(days,allviews)
+
+      }
+        // Loop through the jsonData and extract city data
+        for (var i = 0; i < jsonData.length; i++) {
+            var item = jsonData[i];
+            var city = item.city;
+            var ip = item.ip_address;
+            ip_list.push(ip)
+            var views = item.total_view_count;
+            total_views+=views
+            // If city is not already in cityData, create a new entry with initial values
+            if (!cityData[city]) {
+                no_of_cities.push(city)
+                cityData[city] = {
+                    count: 1,
+                    ipAddresses: [ip],
+                    totalViews: views
+                };
+            } else {
+                // If city is already in cityData, update the values
+                cityData[city].count += 1;
+                cityData[city].ipAddresses.push(ip);
+                cityData[city].totalViews += views;
+            }
+        }
+
+        // Now cityData contains the aggregated data for each city
+        console.log(cityData);
+        // create dropdwon
+        function create_dropdown_menu(label){
+          const newLiElement = document.createElement("li");
+
+          // Step 2: Create a new a (anchor) element
+          const newAnchorElement = document.createElement("a");
+
+          // Step 3: Set attributes and content for the new a element
+          newAnchorElement.setAttribute("id",label); // Set the ID for the new option
+          newAnchorElement.setAttribute("class", "block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600");
+          newAnchorElement.setAttribute("href", "#");
+          newAnchorElement.setAttribute("data-te-dropdown-item-ref", "");
+          newAnchorElement.textContent = label; // Set the text content for the new option
+
+          // Step 4: Append the new anchor element to the new li element
+          newLiElement.appendChild(newAnchorElement);
+
+          // Step 5: Append the new li element to the existing ul with id "dropdownmenu"
+          var dropdownMenu = document.getElementById("dropdownmenu");
+          dropdownMenu.appendChild(newLiElement);
+          var button=document.getElementById(label)
+            button.onclick =   function(label) {
+              return function() {
+                onclick_show_chart(label);
+              };
+          }(label)
+          
+          function onclick_show_chart(city_name){
+            if (typeof cityData === "object") {
+              const keys = Object.keys(cityData);
+            
+              if (keys.includes(city_name)) {
+                console.log(`City "${city_name}" exists in the cityData.`);
+                const dropdowntext=document.getElementById('dropdownMenuButton1')
+                dropdowntext.innerHTML=city_name
+
+            
+            var city_view=cityData[city_name].totalViews
+            console.log(city_view)
+            var chartCanvas = document.getElementById("chart");
+
+            // Remove the canvas from the DOM
+            if (chartCanvas) {
+              chartCanvas.remove();
+            }
+            draw_chart([city_name],[city_view])
+            document.getElementById('detailed_views').innerHTML = city_view;
+
+          } else {
+            console.log(`City "${city_name}" does not exist in the cityData.`);
+          }
+        } 
+
+          }
+        
+        }
+        //adding data dynamically
+        document.getElementById('total_views').innerHTML=total_views
+        document.getElementById('no_of_users').innerHTML=ip_list.length
+        document.getElementById('no_of_cities').innerHTML=no_of_cities.length
+        document.getElementById('realtime_views').innerHTML=jsonReal.length
+        document.getElementById('views_viewmore').addEventListener('click',function(event){
+          var dropdownMenu = document.getElementById("dropdownmenu");
+          dropdownMenu.innerHTML='';
+          realtime_hour_list=['24Hours','48Hours','7days']
+          
+          for (i=0;i<3;i++){
+            create_dropdown_menu(realtime_hour_list[i])
+
+          }
+          realtime_hours_view_click_event()
+          
+          back_button()
+          document.getElementById('div_dashboard_container').classList.add('hidden');
+            document.getElementById('div_dashboard_container_exteneded').classList.remove('hidden')
+
+            console.log(jsonReal)
+            console.log(realtime_ips,realtime_time)
+            //values of x and y axes
+            var days = realtime_time;//x axes
+            var allviews = realtime_ips;//y axes
+            //create a line chart
+            document.getElementById('detailed_views').innerHTML = total_views;
+
+            draw_chart(days,allviews);
+            
+        
+        });
+        document.getElementById('cities_viewmore').addEventListener('click',function(event){
+          document.getElementById('div_dashboard_container').classList.add('hidden');
+          document.getElementById('div_dashboard_container_exteneded').classList.remove('hidden')
+          back_button();
+          var days = []//x axes
+          var allviews = []//y axes
+          //values of x and y axes
+          for (const [day, value] of Object.entries(cityData)) {
+            days.push(day);
+            allviews.push(value.totalViews);
+            create_dropdown_menu(day)
+          }
+          console.log('Cities',days)
+          console.log('Views',allviews)
+          
+          //create a line chart
+          document.getElementById('detailed_views').innerHTML = total_views;
+
+          draw_chart(days,allviews);
+          // Step 1: Create a new li element
+          
+          
+      
+      });
+        function draw_chart(days,allviews){
+//          var charts = document.getElementById("chart");//html canvas
+            var chartCanvas = document.createElement("canvas");
+            chartCanvas.id = "chart";
+
+            // Get the parent div element
+            var parentDiv = document.getElementById("parentcanvas");
+            document.getElementById('view_chart').classList.remove('hidden')
+
+            // Append the canvas to the parent div
+            parentDiv.appendChild(chartCanvas);
+          
+
+          new Chart(chartCanvas, {
+              type: 'bar', //Declare bar chart
+              data: {
+              labels: days, //x-axes data 
+              datasets: [{
+                  label:"Views",
+              data: allviews, //y-axes data 
+              backgroundColor: 'black',//bar charts color
+              }]
+              },
+              options:{
+                  legend: {display:false},
+              }
+             });
+
+            }
+
+        // back functionality
+        function back_button(){
+          var chartCanvas = document.getElementById("chart");
+
+              // Remove the canvas from the DOM
+              if (chartCanvas) {
+                chartCanvas.remove();
+              }
+              dropdowntext.innerHTML='All Time Views'
+
+          front_text=document.getElementById('front-text')
+
+          front_text.innerHTML='<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Dashboard'
+          front_text.addEventListener('click',function(event){
+            document.getElementById('div_dashboard_container').classList.remove('hidden');
+            document.getElementById('div_dashboard_container_exteneded').classList.add('hidden')
+            front_text.innerHTML='Dashboard'
+            var dropdownMenu = document.getElementById("dropdownmenu");
+              dropdownMenu.innerHTML='';
+          })
+        }
+      </script>
+      <!-- Include Moment.js -->
+
+
+</body>
+    
+</html>
