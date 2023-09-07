@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "build": "npx tailwindcss build static/css/styles.css -o static/css/output.css"
+    "build": "npm run tailwind:build",
+    "tailwind:build": "tailwindcss build static/css/styles.css -o static/css/output.css"
   },
+  
   
   "devDependencies": {
     "autoprefixer": "^10.4.14",
